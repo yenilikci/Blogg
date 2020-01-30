@@ -1,0 +1,33 @@
+﻿@model Blogg.Models.Category
+
+@{
+    ViewBag.Title = "Kateogori Sil";
+}
+
+<h2>Sil</h2>
+
+<h3>Kategoriyi Gerçekten Silmek İstiyor Musunuz?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal well">
+        <dt>
+            @Html.DisplayNameFor(model => model.KategoriAdi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KategoriAdi)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Sil" class="btn btn-danger" /> |
+            <button class="btn dahafazla">
+                @Html.ActionLink("Listeye Geri Dön", "Index")
+            </button>
+        </div>
+    }
+</div>

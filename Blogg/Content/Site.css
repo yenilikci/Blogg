@@ -1,0 +1,54 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #FFBD33 !important;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 20px;
+}
+.baslik {
+    color: black;
+    font-family: 'Bauhaus 93';
+    font-size:35px;
+}
+.eklenme
+{
+    font-family: Tahoma;
+    font-size:15px;
+}
+.aciklama {
+    margin-top: 10px;
+    font-size: 20px;
+}
+.blogicerik {
+    border: 4px solid black !important;
+}
+.dahafazla{
+    background-color: black;
+    color:white !important;
+}
+.aramakutusu {
+    background-color: #1A1919 !important;
+    color:white;
+    font-size:30px !important;
+    border: 4px double black !important;    
+    text-align: center !important;
+}
+.kategorikutusu {
+    background-color: #1A1919 !important;
+    color: white;
+    font-size: 50px !important;
+    border: 4px double black !important;
+    text-align: center !important;
+}
+.footer
+{
+    color: black !important;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Bauhaus 93';
+}

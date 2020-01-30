@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Blogg.Models.BlogModel>
+
+@if (Model.Count() == 0)
+{
+    <div class="alert alert-danger">
+        <h3>
+            <span class="glyphicon glyphicon-remove"></span>
+            Kayıt Bulunamadı
+        </h3>
+     </div>
+}
+else
+{
+    foreach (var blog in Model)
+    {
+        <div class="well blogicerik">
+            <h3 class="baslik">
+                @blog.Baslik
+            </h3>
+            <hr style="border:1px solid black;">
+            <p class="eklenme">
+                <span class="glyphicon glyphicon-time"></span>
+                @blog.EklenmeTarihi
+            </p>
+            <hr />
+            <img src="https://comlaf.com/wp-content/uploads/2020/01/Blogg.png" alt="resim" class="img-responsive" />
+            <hr />
+            <p class="aciklama">
+                @blog.Aciklama
+            </p>
+            @Html.ActionLink("Daha Fazla...", "Details", "Blog", new { id = blog.Id }, new { @class = "dahafazla btn" })
+        </div>
+    }
+}

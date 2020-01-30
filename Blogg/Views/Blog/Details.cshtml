@@ -1,0 +1,133 @@
+﻿@model Blogg.Models.Blog
+
+@{
+    ViewBag.Title = "Blog Detayı";
+}
+
+
+<div class="well">
+    <h1 class="baslik">@Model.Baslik</h1>
+    <hr />
+    <p class="eklenme">
+        <span class="glyphicon glyphicon-time"></span>
+        @Model.EklenmeTarihi
+    </p>
+    <hr />
+    <img src="https://comlaf.com/wp-content/uploads/2020/01/Blogg.png" alt="resim" class="img-responsive" />
+    <hr />
+    <blockquote>
+        <p class="aciklama">@Model.Aciklama</p>
+    </blockquote>
+    <p>
+        @Model.İcerik
+    </p>
+</div>
+
+<div class="comment">
+    <hr />
+    <div class="well">
+        <h4>Yorum Yap:</h4>
+        <form role="form">
+            <div class="form-group">
+                <textarea class="form-control" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Gönder</button>
+        </form>
+    </div>
+    <hr />
+    <div class="media well">
+        <img class="mr-3" src="https://i2.wp.com/comlaf.com/wp-content/uploads/2019/06/comlaf-300x300.png?resize=300%2C300" alt="Generic placeholder image" style="width:75px;">
+        <div class="media-body">
+            <h4 class="mt-0">Yorum Yapan:</h4>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+        </div>
+    </div>
+    <hr />
+    <div class="media well">
+        <img class="mr-3" src="https://i2.wp.com/comlaf.com/wp-content/uploads/2019/06/comlaf-300x300.png?resize=300%2C300" alt="Generic placeholder image" style="width:75px;">
+        <div class="media-body">
+            <h4 class="mt-0">Yorum Yapan:</h4>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+        </div>
+    </div>
+</div>
+
+
+@section Menu
+{
+    @Html.Partial("Arama")
+    @{Html.RenderAction("KategoriListesi", "Category");}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

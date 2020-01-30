@@ -1,0 +1,26 @@
+﻿@model Blogg.Models.Category
+
+@{
+    ViewBag.Title = "Kategori Detayları";
+}
+
+<h2>Kategori Detayları</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal well">
+        <dt>
+            @Html.DisplayNameFor(model => model.KategoriAdi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KategoriAdi)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    <button class="btn dahafazla">
+        @Html.ActionLink("Düzenle", "Edit", new { id = Model.Id })
+    </button> 
+</p>

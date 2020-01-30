@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Blogg.Models.BlogModel>
+@{
+    ViewBag.Title = "Anasayfa";
+}
+
+@Html.Partial("BlogListesi",Model)
+
+@section Menu
+{
+    @Html.Partial("Arama")
+    @{Html.RenderAction("KategoriListesi", "Category");}
+}   
